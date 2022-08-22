@@ -1,1 +1,0 @@
-[{"name":"Ba Ra","taj":"111111111","mail":"jani@jani.hu","pass":"$2y$10$rXMT6vzPcDs2aQ0k4kEFD.rmZnNokRe4TaVxnIbbHL\/n.jJB3gDaq"},{"name":"The Admin","taj":"999999999","mail":"admin@nemkovid.hu","pass":"$2y$10$aVwI0H5.txrO2AP9bZWB7u0hISgxPMgmEIqg87fyw83aQvHUosQFC"}]

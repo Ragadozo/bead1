@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Set</title>
+  <style>
+    body {
+      background-color: gray;
+    }
+
+    #frame {
+      top: 8%;
+      left: 2%;
+      position: absolute;
+    }
+
+    div {
+      color: black;
+      text-align: center;
+      font-size: 20px;
+
+    }
+
+    h1 {
+      color: black;
+      text-align: center;
+      font-size: 35px;
+
+    }
+
+    input[type=number] {
+      width: 30px;
+
+    }
+  </style>
+
+
+</head>
+
+<body>
+  <h1>SET</h1>
+  <div id="welcomePage">
+    <input type="button" value="Játékszabály"
+      onclick="window.open('https://fejlesztojatekvilag.hu/uploaded/set_magyar_szabaly.pdf','_blank','resizable=yes')">
+    <br><br>
+    <input type="radio" id="training" name="version" value="training" checked="true" onclick="additionalSettingsShow()">
+    <label for="training">Gyakorló mód</label> |
+    <input type="radio" id="competitive" name="version" value="competitive" onclick="additionalSettings()">
+    <label for="competitive">Verseny mód</label>
+    <br>
+    <div id="plusSetting">
+      <br>
+
+      <label for="setBut"> Legyen-e olyan gomb az oldalon, amelyre kattintva a gép megmondja, van-e SET a leosztásban
+      </label>
+      <input type="checkbox" id="setBut" name="setBut" value="setBut">
+
+      <br>
+      <br>
+      <label for="giveSet"> Legyen-e olyan gomb, amelyre kattintva a gép mutat egy SET-et </label>
+      <input type="checkbox" id="giveSet" name="giveSet" value="giveSet">
+
+      <br>
+      <br>
+      <label for="plus3C"> A plusz 3 lapos kiegészítés automatikusan vagy külön gombra menjen </label>
+      <input type="checkbox" id="plus3C" name="plus3B" value="plus3B">
+
+      <br>
+    </div>
+    <br>
+    <label for="numOfPlayer">Játékosok száma:</label>
+    <input type="number" id="numOfPlayer" value="1" min="1" max="10">
+    <div id="playerNames"></div>
+    <br>
+    <input type="button" value="Start" id="startButton" onclick="startGame()">
+  </div>
+  <div id="trainButtons"></div>
+  <div id="gameBoard">
+
+  </div>
+
+</body>
+<script src="index.js"></script>
+
+</html>
